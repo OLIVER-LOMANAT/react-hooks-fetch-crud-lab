@@ -36,7 +36,7 @@ function App() {
         setQuestions(questions.filter((q) => q.id !== id));
       })
       .catch((err) => console.error("Failed to delete question:", err));
-  }
+  };
 
 function updateQuestion(id, correctIndex) {
   // Optimistically update state first
